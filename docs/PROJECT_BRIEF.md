@@ -11,7 +11,7 @@ Importers sourcing from China end up with dozens of product listings across 1688
 
 ## 2. Who it is for
 
-- **Primary user:** me, sourcing products from 1688 and Alibaba for resale in Romania and the EU.
+- **Primary user:** anyone sourcing products (as a side job or for personal use) from 1688 and Alibaba for resale in Romania and the EU.
 - **Secondary users:** small importers doing the same in any product category.
 - **Not for (yet):** sourcing agents managing many clients, large importers with ERP systems.
 
