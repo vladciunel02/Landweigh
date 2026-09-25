@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Landweigh.Cli/Landweigh.Cli.csproj" />
+    <Project Path="src/Landweigh.Core/Landweigh.Core.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Landweigh.Tests/Landweigh.Tests.csproj" />
+  </Folder>
+</Solution>
