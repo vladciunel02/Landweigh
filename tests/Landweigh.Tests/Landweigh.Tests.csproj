@@ -24,4 +24,8 @@
     <ProjectReference Include="..\..\src\Landweigh.Core\Landweigh.Core.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include="..\..\fixtures\**\*" LinkBase="fixtures" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
 </Project>
