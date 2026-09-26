@@ -2,87 +2,145 @@
   "_fixture": {
     "id": "001-1688-fish-bucket",
     "schema_version": 2,
+    "input": "listing.html",
+    "captured_via": "browser, Save as > Webpage, Complete (only the .html kept)",
     "captured_state": "logged_out",
-    "captured_via": "firecrawl",
+    "page_language": "English, 1688 global auto-translation",
     "human_verified": false
   },
-
   "platform": "1688",
   "source_url": "https://detail.1688.com/offer/894864039706.html",
-  "title_original": "批发活鱼桶路亚装鱼桶可折叠打水桶户外钓鱼水箱装鱼桶加厚鱼护桶",
-  "title_en": "Wholesale live fish bucket, lure fishing fish bucket, foldable water-drawing bucket, outdoor fishing water tank, thickened fish keeper bucket",
+  "title_original": "Wholesale live fish bucket Luya fish bucket foldable bucket outdoor fishing water tank fish bucket thickened fish protection bucket",
+  "title_en": "Wholesale live fish bucket Luya fish bucket foldable bucket outdoor fishing water tank fish bucket thickened fish protection bucket",
   "category": "sports_outdoors",
-
   "supplier": {
-    "name": "固安县顶配渔具用品店",
+    "name": "Gu'an county top-tier fishing tackle & supplies store",
     "profile_url": "https://dingpeiyuju.1688.com/",
-    "location": "Gu'an County, Langfang, Hebei",
+    "location": "Langfang, hebei",
     "years_on_platform": 3
   },
-
   "currency": "CNY",
   "unit_of_measure": "piece",
-  "moq": 1,
+  "moq": null,
   "dispatch_days": 2,
   "domestic_shipping": 3.5,
-
   "variants": [
     {
       "label": "12L",
-      "attributes": { "capacity_l": "12", "handle": "no" },
-      "price_tiers": [ { "min_qty": 1, "max_qty": null, "unit_price": 10.5 } ],
+      "attributes": {
+        "capacity_l": "12",
+        "handle": "no"
+      },
+      "price_tiers": [
+        {
+          "min_qty": null,
+          "max_qty": null,
+          "unit_price": 10.5
+        }
+      ],
       "unit_weight_kg": 0.395,
-      "package_dims_cm": [30, 20, 19]
+      "package_dims_cm": [
+        30,
+        20,
+        19
+      ]
     },
     {
       "label": "17L",
-      "attributes": { "capacity_l": "17", "handle": "no" },
-      "price_tiers": [ { "min_qty": 1, "max_qty": null, "unit_price": 12.5 } ],
+      "attributes": {
+        "capacity_l": "17",
+        "handle": "no"
+      },
+      "price_tiers": [
+        {
+          "min_qty": null,
+          "max_qty": null,
+          "unit_price": 12.5
+        }
+      ],
       "unit_weight_kg": 0.46,
-      "package_dims_cm": [35, 23, 20]
+      "package_dims_cm": [
+        35,
+        23,
+        20
+      ]
     },
     {
       "label": "22L",
-      "attributes": { "capacity_l": "22", "handle": "yes" },
-      "price_tiers": [ { "min_qty": 1, "max_qty": null, "unit_price": 19.0 } ],
+      "attributes": {
+        "capacity_l": "22",
+        "handle": "yes"
+      },
+      "price_tiers": [
+        {
+          "min_qty": null,
+          "max_qty": null,
+          "unit_price": 19.0
+        }
+      ],
       "unit_weight_kg": 0.714,
-      "package_dims_cm": [40, 25, 23]
+      "package_dims_cm": [
+        40,
+        25,
+        23
+      ]
     },
     {
       "label": "27L",
-      "attributes": { "capacity_l": "27", "handle": "yes" },
-      "price_tiers": [ { "min_qty": 1, "max_qty": null, "unit_price": 20.0 } ],
+      "attributes": {
+        "capacity_l": "27",
+        "handle": "yes"
+      },
+      "price_tiers": [
+        {
+          "min_qty": null,
+          "max_qty": null,
+          "unit_price": 20.0
+        }
+      ],
       "unit_weight_kg": 0.772,
-      "package_dims_cm": [45, 27, 24]
+      "package_dims_cm": [
+        45,
+        27,
+        24
+      ]
     },
     {
       "label": "34L",
-      "attributes": { "capacity_l": "34", "handle": "yes" },
-      "price_tiers": [ { "min_qty": 1, "max_qty": null, "unit_price": 21.0 } ],
+      "attributes": {
+        "capacity_l": "34",
+        "handle": "yes"
+      },
+      "price_tiers": [
+        {
+          "min_qty": null,
+          "max_qty": null,
+          "unit_price": 21.0
+        }
+      ],
       "unit_weight_kg": 1.0,
-      "package_dims_cm": [50, 29, 24]
+      "package_dims_cm": [
+        50,
+        29,
+        24
+      ]
     }
   ],
-
   "packaging": {
     "units_per_carton": null,
     "carton_weight_kg": null,
     "carton_dims_cm": null
   },
-
   "customization": {
     "oem": null,
     "logo_print": null
   },
-
   "certifications": [],
-
   "attributes": {
     "material": "EVA",
-    "colours": "khaki, black-gold",
+    "colours": "Khaki, Black gold",
     "foldable": "yes"
   },
-
   "unresolved_fields": [],
-  "labelling_notes": "Variants split by capacity only; the two colours share price, weight and dimensions, so they are listed in attributes.colours instead of doubling the variants. Weights and dimensions come from the per-SKU weight and size table (商品件重尺) and describe one packed unit, not a carton. dispatch_days = 2 from the 48-hour dispatch promise (承诺48小时发货). Page captured logged out; 登录查看全部规格 means more SKUs or bulk tiers may exist that this key does not cover."
+  "labelling_notes": "No minimum order is shown on the logged-out page, so moq and min_qty are null. The 'Price for 1 piece' line belongs to the dropshipping box, which is a different way of buying, not the MOQ of the main offer. Variants split by capacity only; both colours share price, weight and size. Weights and sizes come from the 'Product weight and size' table and describe one packed unit, not a carton. dispatch_days = 2 from 'Commitment to ship within 48 hours'. domestic_shipping from 'Shipping cost ¥3.5 Start'. The top-level 'Gross weight 1' has no unit and is not used. The qualification section only holds a platform reminder, so no certifications. 'Login to view all specifications' means more SKUs or tiers may be hidden."
 }
