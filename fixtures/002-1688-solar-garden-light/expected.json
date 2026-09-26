@@ -2,66 +2,85 @@
   "_fixture": {
     "id": "002-1688-solar-garden-light",
     "schema_version": 2,
+    "input": "listing.html",
+    "captured_via": "browser, Save as > Webpage, Complete (only the .html kept)",
     "captured_state": "logged_out",
-    "captured_via": "firecrawl",
-    "human_verified": false
+    "page_language": "English, 1688 global auto-translation",
+    "human_verified": true
   },
-
   "platform": "1688",
   "source_url": "https://detail.1688.com/offer/748127999122.html",
-  "title_original": "定制太阳能庭院灯户外灯小宫灯中式草坪灯地插灯景观氛围灯感应灯",
-  "title_en": "Custom solar garden light, outdoor small palace lantern, Chinese-style lawn light, ground stake light, landscape ambient light, sensor light",
+  "title_original": "Customized Solar Garden Lights, Outdoor Lights, Small Palace Lanterns, Chinese-Style Lawn Lights, Ground Lights, Landscape Atmosphere Lights, Sensor Lights",
+  "title_en": "Customized Solar Garden Lights, Outdoor Lights, Small Palace Lanterns, Chinese-Style Lawn Lights, Ground Lights, Landscape Atmosphere Lights, Sensor Lights",
   "category": "lighting",
-
   "supplier": {
-    "name": "余姚市浠亚电器厂",
+    "name": "Yuyao xiya electrical appliance factory",
     "profile_url": "https://shop25ix337x65023.1688.com/",
-    "location": "Yuyao, Ningbo, Zhejiang",
+    "location": "Ningbo, zhejiang",
     "years_on_platform": 3
   },
-
   "currency": "CNY",
   "unit_of_measure": "piece",
   "moq": null,
   "dispatch_days": 7,
   "domestic_shipping": null,
-
   "variants": [
     {
       "label": "default",
       "attributes": {},
-      "price_tiers": [ { "min_qty": null, "max_qty": null, "unit_price": 3.9 } ],
-      "unit_weight_kg": null,
-      "package_dims_cm": null
+      "price_tiers": [
+        {
+          "min_qty": null,
+          "max_qty": null,
+          "unit_price": 3.9
+        }
+      ],
+      "unit_weight_kg": 0.1055,
+      "package_dims_cm": [
+        21,
+        9.5,
+        9
+      ]
     }
   ],
-
   "packaging": {
-    "units_per_carton": null,
-    "carton_weight_kg": null,
-    "carton_dims_cm": null
+    "units_per_carton": 100,
+    "carton_weight_kg": 14.1,
+    "carton_dims_cm": [
+      50,
+      43,
+      50
+    ]
   },
-
   "customization": {
     "oem": true,
     "logo_print": null
   },
-
-  "certifications": ["CE"],
-
+  "certifications": [
+    "CE"
+  ],
   "attributes": {
     "model_no": "XY007",
-    "style": "Chinese palace lantern",
-    "material": "ABD+PP",
+    "style": "Chinese style",
+    "material": "ABS engineering plastic",
     "power_source": "solar",
+    "solar_panel": "2V 30mA amorphous silicon",
+    "battery": "1.2V 600mAh Ni-MH",
     "power_w": "0.06",
     "ip_rating": "IP65",
     "runtime_hours": "6-12",
-    "mounting": "ground stake",
-    "sensor": "yes",
-    "light_colours": "warm white, white, RGB"
+    "working_mode": "light control, always on",
+    "light_colours": "warm light, white light, colored light",
+    "product_size_cm": "8.5*8.5*38",
+    "service_life": "about 1-2 years"
   },
-
-  "unresolved_fields": ["customization.oem", "certifications"],
-  "labelling_notes": "customization.oem: the attribute table says 加工定制: 否, but the title starts with 定制 and the page offers 轻定制 and 打样, so true is the best reading. certifications: the attribute table says 认证: 无, but the qualifications section (商品资质证书) shows a seller-uploaded CE certificate; CE is labelled. The three light colours share one price and nothing else differs, so they form a single default variant. moq and min_qty are null because no minimum is shown on the logged-out page. material recorded as written (ABD+PP, likely a typo for ABS+PP); the key records what the listing says, not a correction. sensor: the title says 感应灯, type not stated. Page captured logged out; more SKUs may be hidden."
+  "unresolved_fields": [
+    "unit_of_measure",
+    "customization.oem",
+    "certifications",
+    "attributes.material",
+    "attributes.runtime_hours",
+    "attributes.model_no"
+  ],
+  "labelling_notes": "unit_of_measure: price is per piece, but the details also say 'product weight: 0.26kg (pack of 2)', so the sold unit may be a pair. customization.oem: attribute table says 'Processing and customization: No', but the title says 'Customized' and the page offers 'Light customization', 'Get a sample' and 'Proofing'; true is the best reading. certifications: attribute table says 'Certification: No', but the qualification section lists a CE certificate (STL2024E1217232C-Y1). attributes.material: table says 'Abd+pp', details say 'abs engineering plastic'; the details value is used. attributes.runtime_hours: table says '6-12 hours', details say 'about 8-10 hours'; the table value is used. attributes.model_no: the translated page appends footnote digits to values (XY0071, XY0072, XY0073, and No1 to No5), so the real value is XY007. The three light colours cost ¥3.9 each, so one default variant. unit_weight_kg from 'weight of a single product: 105.5g'; package_dims_cm from 'single box size'. Carton data from 'packing quantity', 'packing size' and 'packing weight'. No MOQ or domestic shipping shown on the logged-out page."
 }

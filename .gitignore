@@ -361,3 +361,6 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+# Landweigh: local experiments and browser 'Save as complete' asset folders
+spike-output/
+*_files/
