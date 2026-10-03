@@ -3,7 +3,7 @@ using System.Text.Json;
 using Landweigh.Core;
 using Microsoft.Extensions.Configuration;
 
-// Usage: dotnet run --project src/Landweigh.Cli -- <path to listing.html>
+
 if (args.Length == 0)
 {
     Console.Error.WriteLine("Usage: Landweigh.Cli <path to listing.html>");
@@ -17,10 +17,7 @@ if (!File.Exists(filePath))
     return 1;
 }
 
-// Chinese titles and the ¥ sign print correctly only with UTF-8.
 Console.OutputEncoding = Encoding.UTF8;
-
-// Secrets come from user-secrets locally and from environment variables (Gemini__ApiKey) in CI or on a server.
 var config = new ConfigurationBuilder()
     .AddUserSecrets<Program>()
     .AddEnvironmentVariables()
@@ -35,8 +32,6 @@ if (string.IsNullOrWhiteSpace(apiKey) || string.IsNullOrWhiteSpace(model))
     Console.Error.WriteLine("  dotnet user-secrets set \"Gemini:Model\" \"<model code>\" --project src/Landweigh.Cli");
     return 1;
 }
-
-// 1. Prune
 var html = await File.ReadAllTextAsync(filePath);
 var pruned = ListingPruner.Prune(html);
 var keptPercent = html.Length == 0 ? 0 : 100.0 * pruned.Length / html.Length;
@@ -46,7 +41,6 @@ Console.WriteLine($"Pruned length:   {pruned.Length:N0} chars ({keptPercent:F1}%
 Console.WriteLine($"Preview: {pruned[..Math.Min(500, pruned.Length)]}");
 Console.WriteLine();
 
-// 2. Extract
 using var http = new HttpClient();
 IProductExtractor extractor = new GeminiProductExtractor(http, apiKey, model);
 
@@ -62,10 +56,9 @@ catch (HttpRequestException ex)
 }
 
 Console.WriteLine($"Model: {model}");
-Console.WriteLine($"Tokens: {result.PromptTokens:N0} in, {result.OutputTokens:N0} out");
+Console.WriteLine($"Tokens: {result.PromptTokens:N0} in, {result.OutputTokens:N0} out, {result.ThoughtTokens:N0} thought");
 Console.WriteLine();
 
-// 3. Print the JSON. Parsing it also tells us whether the model returned valid JSON at all.
 try
 {
     using var doc = JsonDocument.Parse(result.Json);
