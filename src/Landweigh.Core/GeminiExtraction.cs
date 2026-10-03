@@ -3,7 +3,7 @@ using System.Text.Json;
 
 namespace Landweigh.Core;
 
-public sealed record ExtractionResult(string Json, int PromptTokens, int OutputTokens);
+public sealed record ExtractionResult(string Json, int PromptTokens, int OutputTokens, int ThoughtTokens);
 
 public interface IProductExtractor
 {
@@ -90,6 +90,7 @@ public sealed class GeminiProductExtractor(HttpClient http, string apiKey, strin
         var usage = root.GetProperty("usageMetadata");
         int promptTokens = usage.GetProperty("promptTokenCount").GetInt32();
         int outputTokens = usage.GetProperty("candidatesTokenCount").GetInt32();
-        return new ExtractionResult(extractedJson, promptTokens, outputTokens);
+        int thoughtTokens = usage.GetProperty("thoughtTokenCount").GetInt32();
+        return new ExtractionResult(extractedJson, promptTokens, outputTokens, thoughtTokens);
     }
 }
